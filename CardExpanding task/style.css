@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    margin: 20px;
+    width: 80px;
+    height: 80vh;
+    border-radius: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.box h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+    transition: all .5s ease-in-out;
+    color: white;
+    -webkit-text-stroke: 1px  red;
+    text-shadow: 5px 5px 5px rgb(153, 146, 51);
+}
+
+.active {
+    flex: 3;
+}
+
+.box:hover h3 {
+    transform: scale(1.2);
+}
+
+#box-1 {
+    background-image: url(images/bangkok.jpg);
+}
+
+#box-2 {
+    background-image: url(images/mumbai.jpg);
+}
+
+#box-3 {
+    background-image: url(images/quebec.jpg);
+}
+
+#box-4 {
+    background-image: url(images/spain.jpg);
+}
+
+#box-5 {
+    background-image: url(images/tokyo.jpg);
+}
