@@ -27,6 +27,7 @@
            filter: blur(0px);
            z-index: -1;
         }
+        
         .loading{
             font-size: 50px;
             color: white;
