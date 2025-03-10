@@ -5,74 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>scroll-Animation</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100%;
-            background-color: aliceblue;
-            font-family: sans-serif;
-            
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column ;
-            justify-content: center;
-            align-items:center ;
-
-        }
-
-        .box {
-            width: 200px;
-            height: 100px;
-            margin: 10px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #3D77A7;
-            color: white;
-            transform: translateX(200%);
-            transition: transform 0.5s ease;
-            
-        }
-        .box:nth-of-type(even){
-            transform: translateX(-200px);
-        }
-        .box.show{
-            transform: translateX(0);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Scrll to see the animation</h1>
-        <div class="box show"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
-        <div class="box"><h2>Content</h2></div>
+    <h1>Scrll to see the animation</h1>
+    <div class="box show">
+        <h2>Content</h2>
     </div>
-    <script>
-        const box = document.querySelectorAll(".box");
-        window.addEventListener("scroll" , checkBoxes(){
-           box.classList.add("show");
-        })
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
+    <div class="box">
+        <h2>Content</h2>
+    </div>
 
-    </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
