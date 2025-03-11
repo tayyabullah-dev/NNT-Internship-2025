@@ -9,16 +9,17 @@
       width: 100%;
       display: flex;
       font-family: sans-serif;
+      overflow: hidden;
   }
 
   .box {
-      width: 50%;
+      /* /* width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: center; */
       background-position: center;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat; 
       background-size: cover;
       cursor: pointer;
       flex: 1;
