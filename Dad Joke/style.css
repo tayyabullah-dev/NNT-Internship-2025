@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(221, 232, 146);
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.btn button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: aqua;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
