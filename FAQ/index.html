@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="accordion">
+        <h1>FAQ Accordition</h1>
+        <div class="accordion-item">
+            <div class="accordion-title">What is JavaScript and how is it used?<i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-content">JavaScript is a programming language used to make web pages interactive. It
+                runs in the browser and allows developers to add features like animations, form validation, and dynamic
+                content updates. It can also be used on the backend with Node.js.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-title">What is the difference between let, const, and var?<i class="fa-solid fa-angle-down"></i></div>
+            <div class="accordion-content"><b>var:</b> Function-scoped, can be redeclared, hoisted with undefined.<br>
+                <b>let:</b> Block-scoped, cannot be redeclared in the same.<br>
+                <b>const:</b> Block-scoped, cannot be redeclared or reassigned.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-title">What is an arrow function in JavaScript?<i class="fa-solid fa-angle-down"></i></div>
+            <div class="accordion-content">An arrow function is a shorter way to write a function using =>. It does not have its own this value.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-title">What is the difference between == and === in JavaScript? <i class="fa-solid fa-angle-down"></i></div>
+            <div class="accordion-content"><b>== (Loose Equality):</b> Compares values without checking types.<br>
+               <b> === (Strict Equality):</b> Compares both values and types.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-title">What is the fetch API in JavaScript?<i class="fa-solid fa-angle-down"></i></div>
+            <div class="accordion-content">The fetch API is used to make HTTP requests in JavaScript.This fetches data from an API and logs it to the console.</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

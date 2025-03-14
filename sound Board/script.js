@@ -12,7 +12,10 @@ const audio4 = document.querySelector("#audio-tada");
 const audio5 = document.querySelector("#audio-victory");
 const audio6 = document.querySelector("#audio-wrong");
 
+const buttons = document.querySelectorAll("button");
+
 btn1.addEventListener("click" , () => {
+  
     audioStop();
     audio1.play();
 });
