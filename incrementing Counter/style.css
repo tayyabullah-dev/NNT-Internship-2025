@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(10, 164, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.container {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    text-align: center;
+}
+
+.socialApp .followers {
+    margin: 10px 0;
+    font-size: 48px;
+}
+
+.insLogo {
+    color: #E43794;
+}
+
+.flogo {
+    color: blue;
+}
+
+.ytlogo {
+    color: red;
+}
+
+.socialApp .logo {
+    font-size: 48px;
+
+}
