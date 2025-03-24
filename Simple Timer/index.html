@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-color: skyblue;
+            font-family: sans-serif;
+        }
+
+        .container {
+
+            background-color: steelblue;
+            border-radius: 20px;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 3px 3px 20px slateblue;
+            color: white;
+        }
+
+        .timer-circle {
+            border: 2px solid white;
+            background-color: darkblue;
+            color: white;
+            font-size: 38px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0px;
+            position: relative;
+        }
+
+        .circle-point {
+
+            width: 7px;
+            height: 7px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+
+        }
+
+        .btn button {
+            padding: 15px;
+            border: none;
+            outline: none;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 50%;
+            background-color: lightblue;
+        }
+
+        .active {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Timer</h2>
+
+        <div class="timer-circle">
+            <div class="circle-point"></div>
+            <span id="time-minuts">01:</span><span id="time-seconds">00</span>
+        </div>
+
+        <div class="btn">
+            <button id="btn-restart"><i class="fa-solid fa-rotate"></i></button>
+            <button id="btn-start"><i class="fa-solid fa-play"></i></button>
+            <!-- <button id="start"> <i class="fa-solid fa-pause"></i></button>  -->
+        </div>
+    </div>
+    <script>
+        const startBtn = document.querySelector("#btn-start");
+
+        const restartBtn = document.querySelector("#btn-restart");
+        const timerMinuts = document.querySelector("#time-minuts");
+
+        const timerSeconds = document.querySelector("#time-seconds");
+        var i = 1;
+        var j;
+        var interval;
+        var minutInterval;
+
+        startBtn.addEventListener("click", () => {
+            minutInterval = setInterval(() => {
+                timerMinuts.innerText = `00:`;
+            }, 1000);
+
+            decreaseSecond();
+
+        });
+
+        restartBtn.addEventListener("click", () => {
+            clearInterval(minutInterval);
+            clearInterval(interval);
+
+            timerMinuts.innerText = "01:"
+            timerSeconds.innerText = "00"
+
+        });
+
+        function decreaseSecond() {
+
+            var j = 59;
+
+            interval = setInterval(() => {
+                console.log(j);
+                timerSeconds.innerText = j;
+                j--;
+
+                if (j < 0) {
+                    clearInterval(interval);
+                }
+
+            }, 1000);
+        }
+
+    </script>
+</body>
+
+</html>
