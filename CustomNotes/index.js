@@ -5,25 +5,25 @@ const saveNotes = () => {
     const notes = document.querySelectorAll(".notes textarea");
     const data = [];
 
-    notes.forEach( (nte) => {
-         data.push(nte.value);
+    notes.forEach((nte) => {
+        data.push(nte.value);
     });
 
-    if(data.length === 0){
+    if (data.length === 0) {
         localStorage.removeItem("notes");
-    }else{
-localStorage.setItem("notes" ,JSON.stringify(data));
+    } else {
+        localStorage.setItem("notes", JSON.stringify(data));
     }
 }
-addNote.addEventListener("click" , () => {
-addNotes();
+addNote.addEventListener("click", () => {
+    addNotes();
 });
 
 //add blanks note
 const addNotes = (txt = "") => {
-const note = document.createElement('div');
-note.classList.add("notes");
-note.innerHTML = `
+    const note = document.createElement('div');
+    note.classList.add("notes");
+    note.innerHTML = `
     <div class="toolbar">
     <button id="btn-save"><i class="fa-solid fa-floppy-disk"></i></button>
     <button id="btn-delete"><i class="fa-solid fa-trash"></i></button>
@@ -31,33 +31,33 @@ note.innerHTML = `
     <textarea name="" id="txtarea"> ${txt} </textarea>
      `;
 
-note.querySelector("#btn-delete").addEventListener("click" , () => {
-    note.remove();
-    saveNotes();
- });
-
- note.querySelector("#btn-save").addEventListener("click" , () => {
+    note.querySelector("#btn-delete").addEventListener("click", () => {
+        note.remove();
         saveNotes();
- });
+    });
 
- note.querySelector("textarea").addEventListener("focusout" , () => {
-saveNotes();
- });
-mainContainer.appendChild(note);
-saveNotes();
+    note.querySelector("#btn-save").addEventListener("click", () => {
+        saveNotes();
+    });
+
+    note.querySelector("textarea").addEventListener("focusout", () => {
+        saveNotes();
+    });
+    mainContainer.appendChild(note);
+    saveNotes();
 
 }
 
 (
-    function() {
+    function () {
         let saveData = JSON.parse(localStorage.getItem("notes"));
-        if(saveData === null){
+        if (saveData === null) {
             addNotes();
-        }else{
-            saveData.forEach( (sd) => {
+        } else {
+            saveData.forEach((sd) => {
                 addNotes(sd);
             });
-    
+
         }
     }
 )();
