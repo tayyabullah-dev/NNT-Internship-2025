@@ -7,7 +7,6 @@ let rollHistoryList = [];
 function rollDice() {
     const rollResult = Math.floor(Math.random() * 6) + 1;
     const diceface = getDiceFace(rollResult);
-    console.log(diceface);
     diceEl.innerHTML = diceface;
     rollHistoryList.push(rollResult);
     updateRollHistory();
