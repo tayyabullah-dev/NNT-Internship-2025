@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 50px;
+    border: 5px solid black;
+    width: 100%;
+
+    background-color: gray;
+}
+
+.img-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.img-name img {
+    border-radius: 45%;
+}
+
+.name-dob {
+    text-align: end;
+}
+
+.about {
+    margin: 100px 0 50px 0;
+
+}
+
+.about h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.biography ul li {
+    list-style-position: inside;
+    margin-left: 5px;
+    padding: 5px 0;
+}
+
+.biography h3 {
+    margin-bottom: 30px;
+}
+
+.footer {
+    text-align: end;
+    margin-top: 50px;
+}
