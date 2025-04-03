@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #76b5c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    height: 100px;
+}
+
+#password {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid black;
+
+}
+
+#output {
+    font-size: 18px;
+    padding-left: 5px;
+
+}
