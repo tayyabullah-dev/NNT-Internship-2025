@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.toggle-container {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-container input {
+    display: none;
+}
+
+.toggle-container label {
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 20px;
+    width: 60px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.toggle-container .ball {
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    transition: transform 0.3s;
+    top: 2px;
+    left: 2px;
+}
+
+.toggle-container input:checked+label .ball {
+    transform: translateX(30px);
+}
+
+.toggle-container span {
+    font-size: 18px;
+}
+
+#good-container {
+    background-color: #d4edda;
+}
+
+#cheap-container {
+    background-color: #f8d7da;
+}
+
+#fast-container {
+    background-color: #d1ecf1;
+}
