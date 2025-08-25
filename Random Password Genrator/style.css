@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgb(192, 255, 241);
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+}
+
+.passw-genrate-container {
+    border: 2px solid black;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.passw-genrate-container input {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 4px;
+
+}
+
+input::placeholder {
+    letter-spacing: 0;
+}
+
+.genrate-btn {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.genrate-btn:hover {
+    background-color: darkblue;
+    /* transform: scale(1.05); */
+    transition: 0.5s ease;
+}
+
+.genrate-btn:active {
+    transform: scale(1.2);
+}
+
+.fa-copy {
+
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.fa-copy:hover {
+    opacity: 1;
+    transition: 0.4s ease;
+}
+
+.alert-box {
+    width: 250px;
+    height: 70px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.alert-box.active {
+    right: -300px;
+}

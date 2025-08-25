@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Ubuntu , sans-serif;
+            overflow: hidden;
+        }
+
+        .bg{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(images/bgimage.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+           filter: blur(0px);
+           z-index: -1;
+        }
+        
+        .loading{
+            font-size: 50px;
+            color: white;
+        }

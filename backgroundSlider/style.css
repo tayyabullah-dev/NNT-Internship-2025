@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container button {
+
+    padding: 20px;
+    border: 2px solid yellow;
+    outline: none;
+    background-color: transparent;
+}
+
+.prevbtn {
+    position: relative;
+    left: 20px;
+}
+
+.nextbtn {
+    position: absolute;
+    right: 200px;
+}
+
+i {
+    font-size: 48px;
+    color: white;
+}
+
+.main {
+    width: 70%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.maincontainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}

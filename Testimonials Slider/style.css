@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: steelblue;
+}
+.container{
+    width: 500px;
+background-color: blue;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+ img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   margin-top: -60px;
+   margin-bottom: 50px;
+   display: none;
+  
+}
+.testimonials-container{
+    margin-bottom: 20PX;
+    text-align: center;
+}
+
+.author-container{
+    margin-bottom: 20px;
+}
+
+.images.active{
+    display: block;
+}
+.testimonials{
+    display: none;
+}
+.testimonials.active{
+    display: block;
+}
+.author{
+    display: none;
+}
+.author.active{
+    display: block;
+}
